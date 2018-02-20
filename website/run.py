@@ -3,7 +3,8 @@ import random, json, sqlalchemy
 
 app = Flask(__name__)
 
-engine = sqlalchemy.create_engine('mysql+pymysql://root:alex349949@127.0.0.1/game_recommendation?charset=utf8mb4')
+#replace the name and password with your MySQL account
+engine = sqlalchemy.create_engine('mysql+pymysql://#name@#password/game_recommendation?charset=utf8mb4')
 
 #with open('./website/steam_user_id.txt','r') as f:
 with open('steam_user_id.txt','r') as f:
